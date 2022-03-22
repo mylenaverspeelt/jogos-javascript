@@ -59,8 +59,8 @@ function criarCactos() {
             bg.removeChild(cacto);
         } else if (cactoPosicao > 0 && cactoPosicao < 60 && position < 60) {
             clearInterval(esquerdaIntervalo);
-            fimDoJogo = true;
-            document.body.innerHTML = '<h1 class="game-over">Fim de Jogo</h1>';
+            fimDoJogo = true; 0
+            document.body.innerHTML = '<h1 class="game-over">Fim de Jogo</h1> <br /> <button class="reiniciar"><a href="index.html" class="link">Jogar Novamente</a></button>';
         } else {
             cactoPosicao -= 10;
             cacto.style.left = cactoPosicao + 'px';
@@ -72,3 +72,7 @@ function criarCactos() {
 
 criarCactos();
 document.addEventListener('keyup', teclaEspaco);
+
+
+
+

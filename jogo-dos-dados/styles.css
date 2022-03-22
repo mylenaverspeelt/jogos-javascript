@@ -1,27 +1,12 @@
-
-.container {
-  width: 70%;
-  margin: auto;
-  text-align: center;
+button {
+  padding: 10px;
+  border-radius: 3px;
 }
-
-.dice {
-  text-align: center;
-  display: inline-block;
-
-}
-
-.instrucoes{
-  color: #fff;
-  font-family: Helvetica, sans-serif;
-  font-size: 1.6rem;
-  text-align: center;
-}
-
 
 
 body {
   background-color: #393E46;
+  text-align: center;
 }
 
 h1 {
@@ -47,5 +32,21 @@ footer {
   color: #EEEEEE;
   text-align: center;
   font-family: 'Indie Flower', cursive;
+
+}
+
+/* CLASS SELECTORS */
+
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  background-color: #393E46;
+  ;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
 
 }

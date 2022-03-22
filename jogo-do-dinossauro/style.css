@@ -1,5 +1,6 @@
 body {
     background: #fafafa;
+    text-align: center;
 }
 
 .dino {
@@ -8,6 +9,13 @@ body {
     position: absolute;
     bottom: 0;
     background-image: url(dino.png);
+}
+
+.reiniciar {
+    color: #fff;
+    padding: 10px;
+    background-color: #666;
+    margin: 10px auto;
 }
 
 .cacto {
@@ -25,6 +33,11 @@ body {
     font-family: arial;
 }
 
+.link {
+    color: white;
+    text-decoration: none;
+}
+
 .bg {
     position: absolute;
     bottom: 0px;
@@ -40,6 +53,7 @@ body {
     from {
         background-position: 70000%;
     }
+
     to {
         background-position: 0%;
     }

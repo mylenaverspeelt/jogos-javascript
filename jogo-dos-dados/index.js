@@ -1,12 +1,12 @@
 var numeroAleatorio1 = Math.floor(Math.random() * 6) + 1;
-var srcAleatoria =  "images/dice" + numeroAleatorio1 + ".png";
+var srcAleatoria = "images/dice" + numeroAleatorio1 + ".png";
 
 document.querySelectorAll("img")[0].setAttribute("src", srcAleatoria);
 
 // DADO 2
 
 var numeroAleatorio2 = Math.floor(Math.random() * 6) + 1;
-var srcAleatoria2 =  "images/dice" + numeroAleatorio2 + ".png";
+var srcAleatoria2 = "images/dice" + numeroAleatorio2 + ".png";
 
 document.querySelectorAll("img")[1].setAttribute("src", srcAleatoria2);
 
@@ -18,4 +18,9 @@ else if (numeroAleatorio1 < numeroAleatorio2) {
 }
 else {
   document.querySelector("h1").innerHTML = "Empate!";
+}
+
+
+function reiniciar() {
+  location.reload()
 }

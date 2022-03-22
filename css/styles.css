@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Nunito:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFD93D;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    color: black;
+    background-image: url(/arabesque.png);
+}
+
+nav {
+    padding: 20px 0;
+    box-shadow: 2px 0px 2px gray;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    background-color: #FF6B6B;
+    font-size: 1.5rem;
+  
+}
+
+footer{
+    margin: 20px auto;
+}
+
+footer a{
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover{
+    color: #FF6B6B;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* ID SELECTORS */
+
+
+
+
+/* CLASS SELECTORS */
+
+.titulo{
+    font-family: 'Dosis', sans-serif;
+}
+
+.quadrado {
+    background-color: #6BCB77;
+ box-shadow: 2px 2px 2px gray;
+
+}
+
+.botao {
+    background-color: #4D96FF;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.janela {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
