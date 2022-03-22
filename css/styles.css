@@ -12,7 +12,7 @@ body {
     font-size: 1rem;
     color: black;
     background-image: url(/arabesque.png);
-    max-width: 100%;
+
 }
 
 nav {
@@ -56,19 +56,29 @@ footer a:hover {
 
 .quadrado {
     background-color: #6BCB77;
-    box-shadow: 2px 2px 2px gray;
+    margin-top: 50px;
+    border-radius: 5px;
+    width: 300px;
+    padding: 20px 10px;
+    box-shadow: 2px 2px 2px grey;
+    ;
 
+
+}
+
+.titulo {
+    font-family: 'Dosis', sans-serif;
+}
+
+
+.janela {
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .botao {
     background-color: #4D96FF;
     box-shadow: 2px 2px 2px gray;
-}
-
-.janela {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 50px;
-
 }
