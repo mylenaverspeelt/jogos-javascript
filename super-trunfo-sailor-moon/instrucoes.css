@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&family=Work+Sans:wght@300&display=swap');
+ 
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-image: url(./images/bg-sailor-moon.png);
+    background-repeat: no-repeat;
+    color:black;
+    font-weight: bolder;
+    font-family: 'Work Sans', sans-serif;
+    align-items: center;
+  
+}
+
+div{
+    border-radius: 5px;
+    width: 50%;
+    background-color: #fff;
+    margin: auto;
+    box-shadow: 2px 2px 2px grey;
+    opacity: 0.6;
+    margin-top: 200px;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.card{
+    justify-content:initial;
+    padding: 40px;
+    
+}
+
+p a{
+    text-decoration: none;
+    color: black;
+
+}
+
+p a:hover{
+    color:red;
+}
+
+
+button {
+    margin: 10px;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    background-color: #FFFA4D;
+    color: #041562;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px #041562;
+    cursor: pointer;
+    
+}
+
+button:hover{
+color:#041562;
+background-color: #fff;
+opacity: 0.7;
+}

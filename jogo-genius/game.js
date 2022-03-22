@@ -5,13 +5,17 @@ var padraoDoUsuario = [];
 var inicio = false;
 var nivel = 0;
 
-$(document).keypress(function () {
-    if (!inicio) {
-        $("#level-title").text("Nível " + nivel);
-        proximaSequencia();
-        inicio = true;
+
+document.addEventListener("keypress", function (e) {
+    if (e.key === 'Enter') {
+        if (!inicio) {
+            $("#level-title").text("Nível " + nivel);
+            proximaSequencia();
+            inicio = true;
+        }
     }
 });
+
 
 $('.btn').click(function () {
     var corEscolhidaPeloUsuario = $(this).attr("id");
@@ -44,9 +48,9 @@ function checarResposta(nivelAtual) {
             $("body").removeClass("game-over");
         }, 200);
 
-        $("#level-title").text("Fim do jogo. Pressione qualquer tecla para recomeçar.");
-  
-recomecar();  
+        $("#level-title").text("Fim do jogo. Pressione ENTER para recomeçar.");
+
+        recomecar();
     }
 
 };
@@ -85,7 +89,7 @@ function animacao(cor) {
     }, 100);
 }
 
-function recomecar(){
+function recomecar() {
     nivel = 0;
     padraoDoJogo = [];
     inicio = false;

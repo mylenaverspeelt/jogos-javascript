@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&family=Work+Sans:wght@300&display=swap');
+
+
+/* 
+
+CORES
+
+amarelo claro: #FFFA4D;
+amarelo: #F0A500;
+azul claro: #11468F;
+azul escuro: #041562;
+vermelho: #DA1212;
+branco: #F4FCD9;
+preto: #1B1A17;
+rosa claro: #F68989; 
+roxo: #573391;
+
+
+
+
+
+*/
+
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    min-height: 854px;
+    background-image: url(./images/universe-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+
+
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.page-title {
+    margin: 5px 0;
+}
+
+button {
+    padding: .8rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    background-color: #FFFA4D;
+    color: #041562;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px #041562;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #041562;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.btn-outros {
+    background-color: #11468F;
+    color: #FFEBA1;
+}
+
+a {
+    color: #FFEBA1;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #041562;
+}
+
+
+span {
+    color: yellow;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: 'Tangerine', cursive;
+    text-shadow: 2px 2px 2px grey;   
+}
+
+#carta-jogador, #carta-maquina {
+    width: 360px;
+    height: 500px;
+    overflow: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    background-size: 350px 300px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 10px;
+    border-radius: 33px;
+    color: black;
+}
+
+#carta-jogador h3 {
+    text-align: center;
+}
+
+.carta-imagem {
+    border: 1px solid black;
+    height: 100px;
+    margin: 10px;
+}
+
+.carta-imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.carta-status {
+    height: 160px;
+    margin: 2rem;
+    color: white;
+    z-index: 2;
+}
+
+.carta-status input {
+    margin: 20px 10px;
+}
+
+.resultado-final {
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weigth: bolder;
+    padding: 1rem;
+    border: 2px solid black;
+    background-color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.carta-subtitle {
+    z-index: 2;
+    position: absolute;
+    top: 16px;
+    left: 37px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#cartas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carta-status p {
+    margin-bottom: 2rem;
+}
+
+#resultado {
+
+    padding: 20px 0;
+    font-size: 2rem;
+    font-weight: bold;
+}

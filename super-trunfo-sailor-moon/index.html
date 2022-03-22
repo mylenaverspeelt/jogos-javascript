@@ -1,0 +1,46 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>
+        Super Trunfo - Sailor Moon
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page-title">Super Trunfo - <span>Sailor Moon</span></h1>
+        <button class="btn-outros"><a href="instrucoes.html">Instruções</a></button>
+   
+
+        <form id="form">
+            <div class="wrapper">
+                <div>
+                    <div id="carta-jogador">
+                        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                            style=" width: inherit; height: inherit; position: absolute;">
+                        <h3></h3>
+                    </div>
+                </div>
+                <div>
+                    <div id="carta-maquina" class="carta"><img
+                            src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                            style=" width: inherit; height: inherit; position: absolute;"></div>
+                </div>
+            </div>
+            <div class="opcoes" id="opcoes"></div>
+            <div id="resultado"></div>
+        </form>
+        
+        <button onclick="sortearCarta()" class="btn-jogos" id="btnSortear">Sortear carta</button>
+        <button class="btn-jogos" type="button" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button>
+        <br />
+        <button  class="btn-outros" onclick=recarregar()>Reiniciar o Jogo</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
