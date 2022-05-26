@@ -1,29 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Nunito:wght@300&display=swap');
 
+:root {
+    --burgundy: hsl(351, 88%, 30%);
+    --light-green: hsl(62, 63%, 64%);
+    --dark-pink: hsl(0, 62%, 57%);
+    --very-light-green: hsl(62, 70%, 79%);
+    --white: hsl(0, 0%, 100%);
+    --shadows: hsla(0, 0%, 0%, 0.425);
+}
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
+
 body {
-    background-color: #FFD93D;
+    background-color: var(--light-green);
     text-align: center;
     font-family: 'Nunito', sans-serif;
     font-size: 1rem;
-    color: black;
-    background-image: url(/arabesque.png);
-
+    color: var(--burgundy);
+    background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+    font-weight: 600;
 }
 
 nav {
     padding: 20px 0;
-    box-shadow: 2px 1px 2px black;
+    box-shadow: 2px 1px 2px var(--shadows);
     text-align: center;
     font-family: 'Dosis', sans-serif;
-    background-color: #FF6B6B;
+    background-image: linear-gradient(to right, var(--dark-pink), var(--burgundy));
     font-size: 1.5rem;
     width: 100%;
-
+    color: var(--very-light-green);
+    text-shadow: 1px 2px var(--shadows);
 }
 
 footer {
@@ -38,15 +50,10 @@ footer a {
 }
 
 footer a:hover {
-    color: #FF6B6B;
+    color: var(--dark-pink);
     cursor: pointer;
     text-decoration: underline;
 }
-
-/* ID SELECTORS */
-
-
-
 
 /* CLASS SELECTORS */
 
@@ -55,15 +62,17 @@ footer a:hover {
 }
 
 .quadrado {
-    background-color: #6BCB77;
+    background-color: var(--very-light-green);
     margin-top: 50px;
     border-radius: 5px;
     width: 300px;
     padding: 20px 10px;
-    box-shadow: 2px 2px 2px grey;
-    ;
+    box-shadow: 2px 2px 2px var(--shadows);
 
+}
 
+.quadrado p {
+    color: #000;
 }
 
 .titulo {
@@ -72,13 +81,21 @@ footer a:hover {
 
 
 .janela {
-
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .botao {
-    background-color: #4D96FF;
-    box-shadow: 2px 2px 2px gray;
+    background-color: var(--dark-pink);
+    box-shadow: 2px 2px 2px var(--shadows);
+    border: none;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.botao:hover {
+    background-color: var(--burgundy);
+    color: var(--white);
+
 }
